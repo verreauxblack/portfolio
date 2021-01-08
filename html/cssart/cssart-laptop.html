@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cssart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        html, body {
+  position: relative;
+  height: 100%;
+}
+body {
+  /* background: #eee; */
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color:#000;
+  margin: 0;
+  padding: 0;
+}
+.swiper-container {
+  width: 200px;
+  height: 250px;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  border-radius: 8px;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+</style>
+</head>
+<body>
+        <div class="art-block" style="display: flex; flex-direction: row; justify-content: space-between;">
+           <!-- Swiper 1-->
+           <div class="swiper-container one">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide card" style="background-image:url(/pic/doremon.png)">
+                </div>
+                <div class="swiper-slide card" style="background-image:url(/pic/Love-Bus.gif)">
+                </div>
+                <div class="swiper-slide card" style="background-image:url(/pic/pokedex.png)">
+                </div>
+              </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          </div>
+          <!-- Swiper 2-->
+          <div class="swiper-container two">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url(/pic/Polaroid-Camera.gif)">
+                </div>
+                <div class="swiper-slide" style="background-image:url(/pic/kola.png)">
+                </div>
+                <div class="swiper-slide" style="background-image:url(/pic/Pokeball.gif)">
+                </div>
+              </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        <!-- Swiper 3-->
+          <div class="swiper-container three">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url(/pic/Love-Bus.gif)">
+                </div>
+                <div class="swiper-slide" style="background-image:url(/pic/pokedex.png)">
+                </div>
+                <div class="swiper-slide" style="background-image:url(/pic/Polaroid-Camera.gif)">
+                </div>
+              </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        
+
+    <!-- swiper for slideshow -->
+  
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+    <script>
+      var mySwiper = new Swiper('.one', {
+        // Optional parameters
+        loop: true,
+        speed: 700,
+        autoplay: {
+          delay: 1500,
+          disableOnInteraction: false,
+        },
+        effect: 'cube',
+        grabCursor: true,
+        cubeEffect: {
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94,
+        },
+  
+  
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      })
+      var mySwiper = new Swiper('.two', {
+        // Optional parameters
+        loop: true,
+        speed: 850,
+        autoplay: {
+          delay: 1600,
+          disableOnInteraction: false,
+        },
+        effect: 'cube',
+        grabCursor: true,
+        cubeEffect: {
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94,
+        },
+  
+  
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      })
+      var mySwiper = new Swiper('.three', {
+        // Optional parameters
+        loop: true,
+        speed: 1000,
+        autoplay: {
+          delay: 1700,
+          disableOnInteraction: false,
+        },
+        effect: 'cube',
+        grabCursor: true,
+        cubeEffect: {
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94,
+        },
+  
+  
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      })
+    </script>
+  </body>
+</html>
