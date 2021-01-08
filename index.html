@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Comapatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="portfolio">
+
+    <link rel="stylesheet" href="./style/style.css">
+
+    <!-- link for icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+    <!-- fontawsome icon kit's  -->
+    <script src="https://kit.fontawesome.com/efb56132a2.js" crossorigin="anonymous"></script>
+    
+
+    <!--swiper for slideshow  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <title>Portfolio</title>
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <nav class="navigation">
+        <ul class="menu-list">
+            <li class="items active "><a class="item-link active" href="/"><i class="fas fa-home" ></i>  Home</a></li>
+            <li class="items nested-list">
+                <a href="#" class="item-link">
+                    <i class="fas fa-briefcase"></i> Work <i class="fas fa-angle-up"></i>
+                    <ul class="">
+                        <div class="drop-down">
+                            <li class="items"><a href="/project/" class="item-link"><i class="fas fa-tasks"></i> Projects</a></li>
+                            <li class="items"><a href="https://cssart.verreauxblack.biz" class="item-link"><i class="fas fa-palette"></i> CSS Art</a></li>
+                        </div>
+                    </ul>
+                </a>
+            </li>
+            <li class="items"><a href="https://blogs.verreauxblack.biz" class="item-link"><i class="fas fa-blog"></i> Blog</a></li>
+            <li class="items"><a href="/contact/" class="item-link"><i class="fas fa-address-card"></i> Contact</a></li>
+            <li class="items"><a href="/about/" class="item-link"><i class="fas fa-info-circle"></i> About me</a></li>
+        </ul>
+    </nav>
+    <!-- End of  navigation-->
+
+    <!-- navigation2 for mobiles -->
+    <nav class="navigation2">
+        <section class="menu menu--circle">
+            <input type="checkbox" id="menu__active"/>
+            <label for="menu__active" class="menu__active">
+              <div class="menu__toggle">
+                <div class="icon1">
+                  <div class="hamburger"></div>
+                </div>
+              </div>
+              <input type="radio" name="arrow--up" id="degree--up-0"/>
+              <input type="radio" name="arrow--up" id="degree--up-1" />
+  
+              <div class="menu__listings">
+                <ul class="circle">
+                  <li>
+                    <div class="placeholder">
+                      <div class="upside">
+                        <a href="/" class="button"><i class="fas fa-home" style="color: white;"></i></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="placeholder">
+                      <div class="upside">
+                        <a  href="/project/" class="button"><i class="fas fa-tasks"></i></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="placeholder">
+                      <div class="upside">
+                        <a href="https://cssart.verreauxblack.biz/" class="button"><i class="fas fa-palette"></i></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="placeholder">
+                      <div class="upside">
+                        <a href="https://blogs.verreauxblack.biz" class="button"><i class="fas fa-blog"></i></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="placeholder">
+                      <div class="upside">
+                        <a href="/contact/" class="button"><i class="far fa-address-card"></i></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="placeholder">
+                      <div class="upside">
+                        <a href="/about/" class="button"><i class="fas fa-info-circle"></i></a>
+                      </div>
+                    </div>
+                  </li>
+        
+                </ul>
+              </div>
+              <div class="menu__arrow menu__arrow--top">
+                <ul>
+                  <li>
+                    <label for="degree--up-0"><div class="arrow"></div></label>
+                    <label for="degree--up-1"><div class="arrow"></div></label>
+                  </li>
+                </ul>
+              </div>
+              <div class="menu__arrow menu__arrow--bottom">
+                <ul>
+                  <li>
+                    <label for="degree--up-0"><div class="arrow"></div></label>
+                    <label for="degree--up-1"><div class="arrow"></div></label>
+                  </li>
+                </ul>
+              </div>
+            </label>
+          </section>
+    </nav>
+    <!-- end of navigation2 -->
+
+
+        <!-- Project -->
+  <!-- Project for mobiles -->
+  <span id="project-mobile">
+    <section  class="project">
+      <h1 class="project">Projects:</h1>
+      <iframe class="project-mobile" src="./html/project/project-mobile.html" frameborder="0" scrolling="no"></iframe>
+      <button class=" btn-mobile" onclick="window.location.href='./project/'">Read more</button>
+      </section>
+  </span>
+
+  <!-- end of css art for mobile -->
+<!-- project for ipad -->
+<span id="project-ipad">
+  <section class="project">
+    <h1 class="project">Projects:</h1>
+    <iframe class="project-ipad" src="./html/project/project-ipad.html" frameborder="0" scrolling="no"></iframe>
+    <button class=" btn-ipad" onclick="window.location.href='./project/'">Read more</button>
+    </section>
+</span>
+
+<!-- end of project for ipad -->
+<!-- project for laptop -->
+<span id="project-laptop">
+  <section class="project">
+    <h1 class="project">Projects:</h1>
+    <iframe class="project-laptop" src="./html/project/project-laptop.html" frameborder="0" scrolling="no"></iframe>
+    <button class=" btn-laptop" onclick="window.location.href='./project/'">Read more</button>
+    </section>
+</span>
+
+<!-- end of project for laptop -->
+
+  <!-- end of project -->
+
+
+
+
+
+
+
+    <!-- cssart -->
+  <!-- css art for mobiles -->
+  <span id="css-mobile">
+    <section  class="cssart">
+      <h1 class="cssart">CSS Art:</h1>
+      <iframe class="cssart-mobile" src="./html/cssart/cssart-mobile.html" frameborder="0" scrolling="no"></iframe>
+      <button class=" btn-mobile" onclick="window.location.href='https://cssart.verreauxblack.biz/'">Read more</button>
+      </section>
+  </span>
+
+  <!-- end of css art for mobile -->
+<!-- cssart for ipad -->
+<span id="css-ipad">
+  <section class="cssart">
+    <h1 class="cssart">CSS Art:</h1>
+    <iframe class="cssart-ipad" src="./html/cssart/cssart-ipad.html" frameborder="0" scrolling="no"></iframe>
+    <button class=" btn-ipad" onclick="window.location.href='https://cssart.verreauxblack.biz/'">Read more</button>
+    </section>
+</span>
+
+<!-- end of cssart for ipad -->
+<!-- cssart for laptop -->
+<span id="css-laptop">
+  <section class="cssart">
+    <h1 class="cssart">CSS Art:</h1>
+    <iframe class="cssart-laptop" src="./html/cssart/cssart-laptop.html" frameborder="0" scrolling="no"></iframe>
+    <button class=" btn-laptop" onclick="window.location.href='https://cssart.verreauxblack.biz/'">Read more</button>
+    </section>
+</span>
+
+<!-- end of cssart for laptop -->
+
+  <!-- end of cssart -->
+    <!-- Footer -->
+    <footer>
+        <div class="social-media">
+            <a href="https://twitter.com/verreauxblack" target="_blank" title="Twitter"><i class="fab fa-twitter twitter"></i></a>
+            <a href="https://instagram.com/_verreauxblack" target="_blank" title="Instagram"><i class="fab fa-instagram-square insta"></i></a>
+            <a href="https://codepen.io/verreauxblack" target="_blank" title="Codepen"><i class="fab fa-codepen codepen"></i></a>
+            <a href="https://telegram.me/verreauxblack" target="_blank" title="Telegram"><i class="fab fa-telegram telegram"></i>
+            </a>
+            <a href="https://github.com/verreauxblack" target="_blank" title="Github"><i class="fab fa-github "></i>
+            </a>
+        
+            <a href="mailto:verreauxblack@outlook.com"><img src="/pic/social media/outlook.png" alt="outlook" class="image" title="Outlook"></a>
+            <a href="mailto:verreauxblack@gmail.com"><img src="/pic/social media/gmail.png" alt="gmail" class="image" title="Gmail"></a>
+          </div>
+          <div class="designed">
+            <h3>@2020 Designed and Developed</h3>
+            <h1>by <strong>RAJKUMAR</strong></h1>
+          </div>
+    </footer>
+    <!-- End of footer -->
+    <script src="./js/app.js"></script>
+</body>
+</html>
