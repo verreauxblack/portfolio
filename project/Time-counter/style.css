@@ -28,9 +28,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .title{
+    text-align: center;
     background: #3F5EFB;
     background: -webkit-linear-gradient(to top left, #3F5EFB 0%, #FC466B 100%);
     background: -moz-linear-gradient(to top left, #3F5EFB 0%, #FC466B 100%);
@@ -51,6 +53,7 @@ span{
 
 .bigText{
     font-size: 5rem;
+    font-weight: bold;
 }
 
 .left{
@@ -184,11 +187,34 @@ button{
     width: 300px;
     height: 150px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 .fa-twitter{
     color: #00ACEE;
     font-size: 2rem;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+/* media query for mobiles */
+@media screen and (max-device-width: 520px){
+    body{
+        margin: 50px 0;
+    }
+    .bigText{
+        font-size: 4.78rem;
+        font-weight: 700;
+    }
+    .share{
+        width: 200px !important;
+        justify-content: center !important;
+        flex-wrap: wrap;
+    }
 }
