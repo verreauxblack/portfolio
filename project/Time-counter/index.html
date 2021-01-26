@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time counter | verreauxblack</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+<body id="body">
+    <h1 id="title" class="title"></h1>
+
+    <div class="counterContainer">
+        <div class="counterEl day">
+            <h1 class="bigText" id="days">0</h1>
+            <span>Days</span>
+        </div>
+        <div class="counterEl hour">
+            <h1 class="bigText" id="hours">0</h1>
+            <span>Hours</span>
+        </div>
+        <div class="counterEl Minutes">
+            <h1 class="bigText" id="Minutes">0</h1>
+            <span>Minutes</span>
+        </div>
+        <div class="counterEl Seconds">
+            <h1 class="bigText" id="Seconds">0</h1>
+            <span>Seconds</span>
+        </div>
+        <p class="left">left</p>
+    </div>
+    
+    <div class="share">
+        <button type="button" class="open-modal" data-open="EnterDate">Enter Date</button>
+        <div class="share-p">
+            <p>Share with</p>
+            <a href=" https://twitter.com/intent/tweet?text=Countdown Timer%0a    by @verreauxblack%0ahttps://verreauxblack.biz/project/Time-counter/" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+    <div class="modal" id="EnterDate">
+        <div class="modal-dialog">
+            <header class="modal-header">
+                <button class="close-modal" aria-label="close modal" data-close>X</button>
+            </header>
+            <form id="titleAndDate" class="modal-content" method="get">
+                <div class="form_div">
+                    <input type="text" name="eventName" class="form_input eventName" id="userEvent" placeholder=" " required>
+                    <label for="" class="form_label">Event Name</label>
+                </div>
+                <div class="form_div">
+                    <input type="date" name="date" id="userDate" class="form_input" placeholder=" " required>
+                    <label for="" class="form_label">DD-MM-YYYY</label>
+                </div>
+                <button type="submit" for="titleAndDate" class="submit" id="submit" aria-label="close modal" data-close value="OK">OK</button>
+            </form>
+            <footer class="modal-footer">
+
+
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
