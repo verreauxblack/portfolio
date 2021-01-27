@@ -101,3 +101,30 @@ document.addEventListener("keyup", e => {
         document.querySelector(".modal.is-visible").classList.remove(isvisible)
     }
 })
+
+document.getElementById("twitter").href = `https://twitter.com/intent/tweet?text=%22${EventName}%22+Time+Left%0a${ampasend(url_string)}%0avia+@verreauxblack`;
+
+document.getElementById("whatsapp").href = `https://wa.me/?text=%22${EventName}%22+Time+Left%0A${ampasend(url_string)}`;
+
+function ampasend(link){
+    var newStr = link.replace(/&/g,"%26")
+    return newStr
+}
+
+//tooltip for copy to clip board
+function tooltip() {
+    const elem = document.createElement('textarea');
+    elem.value = `"${EventName}" Time Left\n${url_string}`;
+    document.body.appendChild(elem);
+    elem.select();
+    document.execCommand('copy');
+    document.body.removeChild(elem);
+
+    var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copied: " + elem.value;
+  }
+  
+  function outFunc() {
+    var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copy to clipboard";
+  }
