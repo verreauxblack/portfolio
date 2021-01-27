@@ -102,12 +102,14 @@ document.addEventListener("keyup", e => {
     }
 })
 
-document.getElementById("twitter").href = `https://twitter.com/intent/tweet?text=%22${EventName}%22+Time+Left%0a${ampasend(url_string)}%0avia+@verreauxblack`;
+document.getElementById("twitter").href = `https://twitter.com/intent/tweet?text=%22${EventName}%22+Time+Left%0a${plusAmpasend(url_string)}%0avia+@verreauxblack`;
 
-document.getElementById("whatsapp").href = `https://wa.me/?text=%22${EventName}%22+Time+Left%0A${ampasend(url_string)}`;
+document.getElementById("whatsapp").href = `https://wa.me/?text=%22${EventName}%22+Time+Left%0A${plusAmpasend(url_string)}`;
 
-function ampasend(link){
-    var newStr = link.replace(/&/g,"%26")
+
+function plusAmpasend(link){
+    var newStr = link.replace(/&/g,"%26");
+    newStr = newStr.replace(/\+/g,"%2b")
     return newStr
 }
 
