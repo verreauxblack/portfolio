@@ -37,9 +37,11 @@
     </div>
     <div class="share">
         <button type="button" class="open-modal" data-open="EnterDate">Enter Date</button>
-        <div class="share-p">
+        <div class=" share-p">
             <p>Share with</p>
-            <a id="share" href=" https://twitter.com/intent/tweet?text=Countdown Timer%0a    by @verreauxblack%0ahttps://verreauxblack.biz/project/Time-counter/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a id="twitter" class="tooltip" href="" target="_blank"><span class="tooltiptext" id="twitterTooltip">share with twitter</span><i class="fab fa-twitter"></i></a>
+            <a id="whatsapp" class="tooltip" href=""><span class="tooltiptext" id="whatsappTooltip">Share with whatsapp</span><i class=" fab fa-whatsapp"></i></a>
+            <button class="tooltip" onclick="tooltip()" onmouseout="outFunc()"><span class="tooltiptext" id="myTooltip">Copy to clipboard</span><i class="fas fa-share-alt"></i></button>
         </div>
     </div>
     <div class="modal" id="EnterDate">
